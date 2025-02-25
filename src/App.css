@@ -1,0 +1,240 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #1a1a1a; /* Dark background */
+  color: #ffffff; /* White text */
+}
+.animated-heading{
+  background: linear-gradient(45deg, #85deeb, #ead670, #b568f4);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientText 7s infinite linear;
+}
+@keyframes gradientText {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+a {
+  text-decoration: none;
+  color: #60a5fa; /* Blue link color */
+  transition: color 0.4s ease;
+}
+
+a:hover {
+  color: #c7eeff; /* Darker blue on hover */
+  transform: scale(1.1);
+}
+
+/* Header Styles */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1f2937; /* Dark gray */
+  padding: 1rem;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* Allow nav items to wrap on smaller screens */
+}
+
+/* Hero Section Styles */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+  height: 70vh;
+  background: linear-gradient(to right, #1f2937, #111827); /* Gradient background */
+  flex-direction: column; /* Stack content vertically on small screens */
+  text-align: center; /* Center-align text on small screens */
+}
+
+#hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#hero p {
+  margin-top: 1rem;
+  color: #d1d5db; /* Light gray text */
+}
+
+#hero img {
+  width: 100%; /* Full width on small screens */
+  max-width: 400px; /* Limit image size on larger screens */
+  height: auto;
+  margin-top: 2rem; /* Add space between text and image */
+}
+
+/* Tech Stack Section Styles */
+#tech-stack {
+  padding: 2rem;
+  background-color: #1f2937; /* Dark gray */
+  text-align: center;
+}
+
+#tech-stack h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.tech-stack-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* Allow tech stack items to wrap on smaller screens */
+}
+
+.tech-stack-item {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem;
+  background-color: #374151; /* Medium gray */
+  border-radius: 0.5rem;
+}
+
+/* Featured Projects Section Styles */
+#featured-projects {
+  padding: 2rem;
+  background-color: #111827; /* Darker gray */
+  text-align: center;
+}
+
+#featured-projects h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: #1f2937; /* Dark gray */
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0.5px 0.5px skyblue;
+  transition: transform 0.3s ease-in-out; 
+}
+.project-card:hover{
+  transform: scale(1.04);
+}
+.project-card img {
+  width: 100%;
+  height: 200px;
+  background: cover;
+}
+
+.project-card h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.project-card p {
+  color: #d1d5db; /* Light gray text */
+  padding: 0 1rem 1rem;
+}
+
+.project-card .tech-used {
+  color: #60a5fa; /* Blue text */
+  font-size: 0.875rem;
+  padding: 0 1rem 1rem;
+}
+
+/* Let’s Connect Section Styles */
+#lets-connect {
+  padding: 2rem;
+  background-color: #1f2937; /* Dark gray */
+  text-align: center;
+}
+
+#lets-connect h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* Allow social links to wrap on smaller screens */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  /* Adjust header for smaller screens */
+  nav {
+    gap: 1rem;
+  }
+
+  /* Adjust hero section for smaller screens */
+  #hero {
+    padding: 1rem;
+  }
+
+  #hero h1 {
+    font-size: 2rem; /* Smaller heading on small screens */
+  }
+
+  #hero p {
+    font-size: 1rem; /* Smaller paragraph text on small screens */
+  }
+
+  /* Adjust tech stack section for smaller screens */
+  .tech-stack-item {
+    font-size: 1.25rem; /* Smaller tech stack items on small screens */
+    padding: 0.75rem;
+  }
+
+  /* Adjust featured projects section for smaller screens */
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Smaller cards on small screens */
+  }
+
+  /* Adjust let's connect section for smaller screens */
+  .social-links {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens */
+  #hero h1 {
+    font-size: 1.75rem; /* Even smaller heading on very small screens */
+  }
+
+  #hero p {
+    font-size: 0.875rem; /* Even smaller paragraph text on very small screens */
+  }
+
+  .tech-stack-item {
+    font-size: 1rem; /* Smaller tech stack items on very small screens */
+    padding: 0.5rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr; /* Single column layout for very small screens */
+  }
+}
+
+.social-links a{
+  transition: 0.4s ease-in-out;
+}
+.social-links img:hover{
+  box-shadow: 0 0 5px white, 0 0 5px grey, 0 0 5px grey;
+}
