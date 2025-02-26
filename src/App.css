@@ -6,7 +6,7 @@ body {
   color: #ffffff; /* White text */
 }
 .animated-heading{
-  background: linear-gradient(45deg, #85deeb, #ead670, #b568f4);
+  background: linear-gradient(45deg,#60a5fa, #f3ec9d, #59e4a8);
   background-size: 300% 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -22,6 +22,10 @@ a {
   text-decoration: none;
   color: #60a5fa; /* Blue link color */
   transition: color 0.4s ease;
+}
+
+a.active{
+  color:#84eaba;
 }
 
 a:hover {
