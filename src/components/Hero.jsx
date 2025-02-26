@@ -7,7 +7,8 @@ function Hero() {
       <div style={{ width: "50%" }}>
         <h2 className="animated-heading">Hello, I’m Somnath</h2>
         <p>
-          A Front-End developer who loves to design appealing and functional web applications that meet users’ expectations of having a wow experience interacting with the product and understanding the workflows. 
+          Crafting lovable UIs for web applications in React. A frontend should
+          be simple and useful, not complex and overwhelming. 
         </p>
       </div>
 
