@@ -51,6 +51,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top:2rem;
   padding: 3rem;
   height: 70vh;
   background: linear-gradient(to right, #1f2937, #111827); /* Gradient background */
