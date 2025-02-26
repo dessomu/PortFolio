@@ -47,7 +47,7 @@ nav {
 }
 
 /* Hero Section Styles */
-#hero {
+.hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -59,17 +59,17 @@ nav {
   text-align: center; /* Center-align text on small screens */
 }
 
-#hero h1 {
+.hero h1 {
   font-size: 3rem;
   font-weight: bold;
 }
 
-#hero p {
+.hero p {
   margin-top: 1rem;
   color: #d1d5db; /* Light gray text */
 }
 
-#hero img {
+.hero img {
   width: 100%; /* Full width on small screens */
   max-width: 400px; /* Limit image size on larger screens */
   height: auto;
