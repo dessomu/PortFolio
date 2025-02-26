@@ -3,7 +3,7 @@ import codingImg from "../assets/illustration.png";
 
 function Hero() {
   return (
-    <section id="hero">
+    <section id="home" className="hero">
       <div style={{ width: "50%" }}>
         <h2 className="animated-heading">Hello, I’m Somnath</h2>
         <p>
