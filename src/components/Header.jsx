@@ -11,6 +11,9 @@ function Header() {
   return (
     <header>
       <nav>
+        <a onClick={() => sound.play()} href="#home">
+          Home
+        </a>
         <a onClick={() => sound.play()} href="#tech-stack">
           Tech Stacks
         </a>
