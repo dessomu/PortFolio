@@ -1,5 +1,5 @@
 import React from "react";
-import codingImg from "../assets/coding.png";
+import codingImg from "../assets/illustration.png";
 
 function Hero() {
   return (
